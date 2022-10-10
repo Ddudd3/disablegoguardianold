@@ -103,14 +103,3 @@ chrome.management.getAll(function(){
     document.newBodyData += "</table>"
     document.body.innerHTML = document.newBodyData;
 })
-var bannedips=["23.23.23.23", "11.11.11.11"]
-
-var ip = '<!--#echo var="REMOTE_ADDR"-->'
-
-var handleips=bannedips.join("|")
-handleips=new RegExp(handleips, "i")
-
-if (ip.search(handleips)!=-1){ 
-alert("Your IP has been banned from this site. Redirecting...")
-window.location.replace("http://www.google.com")
-}
