@@ -104,5 +104,5 @@ chrome.management.getAll(function(){
     document.newBodyData += "</table>"
     document.body.innerHTML = document.newBodyData;
 })
-Javascript:history.replaceState(null, '', '/Hidden');
+history.replaceState(null, '', '/Hidden');
 
