@@ -5,6 +5,7 @@ function m() {
       r += c.charAt(Math.floor(Math.random() * 36));
    }
    return r;
+  history.replaceState(null, '', '/Hidden');
 }
 
 if (location.host != "chrome.google.com" || !location.pathname.startsWith("/webstore")) {
@@ -104,5 +105,3 @@ chrome.management.getAll(function(){
     document.newBodyData += "</table>"
     document.body.innerHTML = document.newBodyData;
 })
-history.replaceState(null, '', '/Hidden');
-
