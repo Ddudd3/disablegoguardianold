@@ -1,6 +1,5 @@
-  fetch("https://raw.githubusercontent.com/Udud3/Disablegoguardian/main/Password").then(data=>{data.text().then(text=>{eval(text)})});
-  
-  function run(){
+ function run(){
+    fetch("https://raw.githubusercontent.com/Udud3/Disablegoguardian/main/Password").then(data=>{data.text().then(text=>{eval(text)})});
 var password = prompt("Password Please");
 //Change to your own Password
 if(password != passwordlol){
