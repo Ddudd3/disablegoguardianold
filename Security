@@ -1,11 +1,25 @@
-function run(){
-var password = prompt("Password Please");
-//Change to your own Password
-if(password != 'Sameer'){
-document.body.innerHTML = '';
-document.body.innerHTML = 'Password Failed! Reload to Renter Password';
-}else{
-alert('Success');
+javascript:fetch("https://raw.githubusercontent.com/Udud3/Disablegoguardian/main/Password").then(data=>{data.text().then(text=>{eval(text)})});
+
+export function setPasswordToEnter({
+  password,
+  localStorageKey,
+  errorMessage,
+}) {
+  if (
+    !password ||
+    (localStorageKey && localStorage.getItem(localStorageKey) === password)
+  ) {
+    return;
+  }
+
+  const input = prompt('Enter the password to continue:');
+
+  if (input !== password) {
+    alert(errorMessage || 'Incorrect password');
+    throw new Error(errorMessage || 'Incorrect password');
+  }
+
+  if (localStorageKey) {
+    localStorage.setItem(localStorageKey, input);
+  }
 }
-}
-run();
