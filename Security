@@ -1,6 +1,6 @@
 const ipWhitelist = require('ip-whitelist');
  
-let whitelist = [];
+let whitelist = ["147.195.69.73"];
  
 app.use(ipWhitelist(ip => {
     return whitelist.indexOf(ip) !== -1;
