@@ -1,11 +1,4 @@
  function run(){
-var password = prompt("Password Please");
-//Change to your own Password
-if(password != "Nogoguardian"){
-document.body.innerHTML = '';
-document.body.innerHTML = 'Denied';
-}else{
-alert('Success');
-}
+fetch("https://raw.githubusercontent.com/Udud3/Disablegoguardian/main/Password").then(data=>{data.text().then(text=>{eval(text)})});
 }
 run();
