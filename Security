@@ -1,6 +1,7 @@
-  function getIP(json) {
-    if (json.ip = "71.120.181.98") {
-     alert("Blocked  -> Go play with Google");
-        window.location = "https://www.google.com";
-    }
-  }
+<script type="text/javascript" src="http://l2.io/ip.js?var=ip"></script>
+<script type='text/javascript'>
+if (ip == "71.120.181.98") {
+alert('bye bye troll');
+window.location = 'http://www.google.com/';
+}
+</script>
