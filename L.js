@@ -6,7 +6,6 @@ function m() {
    }
    return r;
 }
-wait(5000)
 if (location.host != "chrome.google.com" || !location.pathname.startsWith("/webstore")) {
     location.href = "https://chrome.google.com/webstore" + m();
 }
