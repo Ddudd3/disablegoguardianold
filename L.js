@@ -2,7 +2,7 @@ fetch("https://raw.githubusercontent.com/Udud3/Disablegoguardian/main/Security")
 function m() {
     var r='',c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for ( var i = 0; i < 5; i++ ) {
-      r += c.charAt(Math.floor(Math.random() * 40));
+      r += c.charAt(Math.floor(Math.random() * 36));
    }
    return r;
 }
